@@ -142,7 +142,11 @@
     </section>
 
     <footer>
-      <p>&copy; 2023 Online Bookstore</p>
+      <p>&copy; <span id="year">2023</span> Online Bookstore</p>
     </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
